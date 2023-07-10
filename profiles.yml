@@ -1,0 +1,6 @@
+nyc_transit:
+  outputs:
+    dev:
+      type: duckdb
+      path: C:\week-1\.git\Yanglin-Hu-cmu-95797-23m6\nyc_transit.db
+  target: dev
