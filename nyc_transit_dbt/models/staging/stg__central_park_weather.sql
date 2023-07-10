@@ -1,6 +1,6 @@
 with source as (
 
-	select * from {{ source('NYC-transit', 'central_park_weather') }}
+	select * from {{ source('main', 'central_park_weather') }}
 	
 ),
 

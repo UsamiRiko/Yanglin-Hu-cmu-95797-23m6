@@ -1,4 +1,3 @@
--- Create a list of staging commands to translate SQL commandes that modifies data type and column name 
 
 with source as (
     select * from {{ source('main','yellow_tripdata') }}
