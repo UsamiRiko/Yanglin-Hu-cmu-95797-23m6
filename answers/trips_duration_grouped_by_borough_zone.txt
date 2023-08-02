@@ -1,0 +1,269 @@
+┌───────────────┬───────────────────────────────────────────────┬──────────┬──────────────────┐
+│    Borough    │                     Zone                      │ trip_num │ avg_duration_min │
+│    varchar    │                    varchar                    │  int64   │      double      │
+├───────────────┼───────────────────────────────────────────────┼──────────┼──────────────────┤
+│ Brooklyn      │ Starrett City                                 │   479681 │            17.57 │
+│ Brooklyn      │ East New York                                 │  4222298 │            16.51 │
+│ Brooklyn      │ Clinton Hill                                  │  1985685 │            18.21 │
+│ Brooklyn      │ Coney Island                                  │   913531 │            20.33 │
+│ Brooklyn      │ Homecrest                                     │  1020807 │            15.56 │
+│ Brooklyn      │ Bushwick South                                │  3888059 │            18.67 │
+│ Queens        │ South Jamaica                                 │  1167126 │            15.82 │
+│ Brooklyn      │ Flatlands                                     │  1921539 │            17.13 │
+│ Brooklyn      │ Flatbush/Ditmas Park                          │  3016043 │             18.5 │
+│ Queens        │ Flushing                                      │  1521736 │            28.93 │
+│ Queens        │ Astoria                                       │  3327293 │            16.67 │
+│ Queens        │ Hammels/Arverne                               │   599705 │            23.31 │
+│ Queens        │ Glen Oaks                                     │   242539 │            19.13 │
+│ Bronx         │ Westchester Village/Unionport                 │   913415 │            15.38 │
+│ Brooklyn      │ Brooklyn Heights                              │  1525983 │            19.86 │
+│ Brooklyn      │ Borough Park                                  │  1697236 │            16.23 │
+│ Brooklyn      │ Crown Heights North                           │  5305186 │            17.82 │
+│ Bronx         │ Van Nest/Morris Park                          │  1472583 │             16.0 │
+│ Manhattan     │ East Harlem North                             │  3279633 │            16.57 │
+│ Queens        │ Bellerose                                     │   240513 │            17.22 │
+│ Brooklyn      │ Bath Beach                                    │   372861 │            16.83 │
+│ Brooklyn      │ Ocean Hill                                    │  1779482 │            17.36 │
+│ Brooklyn      │ Bedford                                       │  3123045 │            17.72 │
+│ Manhattan     │ East Harlem South                             │  3180129 │             17.5 │
+│ Manhattan     │ Washington Heights North                      │  2006241 │            17.08 │
+│ Brooklyn      │ Marine Park/Mill Basin                        │  1030863 │            18.08 │
+│ Bronx         │ Soundview/Castle Hill                         │  2009439 │             15.5 │
+│ Brooklyn      │ Brownsville                                   │  2614635 │             16.7 │
+│ Manhattan     │ Upper East Side North                         │  4803911 │            15.93 │
+│ Queens        │ Fresh Meadows                                 │   285678 │            16.81 │
+│ Queens        │ Queens Village                                │   906249 │            16.69 │
+│ Queens        │ Elmhurst/Maspeth                              │   665260 │            15.61 │
+│ Bronx         │ Williamsbridge/Olinville                      │  1825940 │            15.72 │
+│ Queens        │ Springfield Gardens North                     │   751548 │            16.39 │
+│ Queens        │ South Ozone Park                              │  1864954 │            14.91 │
+│ Bronx         │ Pelham Parkway                                │  1163874 │            16.04 │
+│ Brooklyn      │ Prospect-Lefferts Gardens                     │  2899021 │            18.56 │
+│ Brooklyn      │ Park Slope                                    │  2978917 │            19.49 │
+│ Queens        │ Elmhurst                                      │  2459116 │            16.42 │
+│ Brooklyn      │ Midwood                                       │  1080452 │            17.45 │
+│ Brooklyn      │ Gowanus                                       │   639650 │            18.23 │
+│ Bronx         │ East Concourse/Concourse Village              │  2036419 │            16.05 │
+│ Queens        │ Whitestone                                    │   435676 │            24.28 │
+│ Queens        │ Baisley Park                                  │  1188929 │            16.11 │
+│ Brooklyn      │ East New York/Pennsylvania Avenue             │  1252536 │            17.48 │
+│ Queens        │ Jackson Heights                               │  2657024 │            16.48 │
+│ Brooklyn      │ Fort Greene                                   │  2264294 │            18.56 │
+│ Queens        │ Hollis                                        │   413317 │            17.15 │
+│ Bronx         │ Belmont                                       │  1085248 │            15.63 │
+│ Bronx         │ Kingsbridge Heights                           │  1040857 │            15.38 │
+│ Queens        │ Far Rockaway                                  │   673031 │            25.06 │
+│ Queens        │ Howard Beach                                  │   434836 │            16.46 │
+│ Brooklyn      │ Erasmus                                       │  1210494 │            17.98 │
+│ Brooklyn      │ Bensonhurst West                              │  1146711 │            16.59 │
+│ Brooklyn      │ Sheepshead Bay                                │  1112367 │             15.6 │
+│ Manhattan     │ Gramercy                                      │  3694763 │            16.42 │
+│ Manhattan     │ Lincoln Square East                           │  3708754 │             16.5 │
+│ Queens        │ Saint Albans                                  │  1461009 │            16.64 │
+│ Bronx         │ Spuyten Duyvil/Kingsbridge                    │  1182099 │             15.5 │
+│ Queens        │ Rego Park                                     │   859929 │            17.33 │
+│ Manhattan     │ Chinatown                                     │   766257 │            18.97 │
+│ Queens        │ Woodhaven                                     │  1109833 │            17.19 │
+│ Brooklyn      │ Boerum Hill                                   │  1763398 │            19.61 │
+│ Manhattan     │ Upper East Side South                         │  5116152 │             15.5 │
+│ Bronx         │ Highbridge                                    │  1376880 │            15.84 │
+│ Manhattan     │ Washington Heights South                      │  3060133 │            17.07 │
+│ Brooklyn      │ Greenpoint                                    │  2418765 │            18.08 │
+│ Bronx         │ Longwood                                      │   887472 │            16.41 │
+│ Brooklyn      │ Gravesend                                     │   499930 │            16.45 │
+│ Queens        │ Kew Gardens                                   │   685783 │            16.24 │
+│ Brooklyn      │ Kensington                                    │   675006 │            18.44 │
+│ Queens        │ East Flushing                                 │   353086 │            25.91 │
+│ Brooklyn      │ Madison                                       │   789984 │            15.93 │
+│ Brooklyn      │ Downtown Brooklyn/MetroTech                   │  1501698 │            19.61 │
+│ Brooklyn      │ Williamsburg (South Side)                     │  2576044 │            18.46 │
+│ Brooklyn      │ Williamsburg (North Side)                     │  2844127 │            19.56 │
+│ Queens        │ Forest Hills                                  │  2019594 │            17.74 │
+│ Bronx         │ Parkchester                                   │   948920 │            16.36 │
+│ Manhattan     │ Marble Hill                                   │   406751 │            14.14 │
+│ Manhattan     │ UN/Turtle Bay South                           │  2480050 │            16.68 │
+│ Bronx         │ Hunts Point                                   │  1183182 │            16.14 │
+│ Bronx         │ Mott Haven/Port Morris                        │  2271238 │            16.72 │
+│ Bronx         │ Bronxdale                                     │   999044 │            15.71 │
+│ Manhattan     │ Stuy Town/Peter Cooper Village                │   760170 │            16.93 │
+│ Bronx         │ Mount Hope                                    │  1973885 │            14.99 │
+│ Brooklyn      │ East Williamsburg                             │  2432463 │            17.63 │
+│ Manhattan     │ Central Harlem North                          │  3783413 │            16.28 │
+│ Queens        │ North Corona                                  │   851485 │            16.13 │
+│ Bronx         │ Woodlawn/Wakefield                            │  1116256 │            15.58 │
+│ Bronx         │ Soundview/Bruckner                            │   999705 │            14.51 │
+│ Manhattan     │ Central Harlem                                │  2784022 │            16.92 │
+│ Manhattan     │ Midtown Center                                │  4812004 │            18.45 │
+│ Manhattan     │ Murray Hill                                   │  4572714 │            16.68 │
+│ Queens        │ Queensboro Hill                               │   421034 │            25.18 │
+│ Brooklyn      │ East Flatbush/Remsen Village                  │  2145211 │            16.45 │
+│ Manhattan     │ Battery Park                                  │    49384 │            21.97 │
+│ Queens        │ Rosedale                                      │   591477 │            16.17 │
+│ Brooklyn      │ Bushwick North                                │  2543328 │            17.97 │
+│ Brooklyn      │ Crown Heights South                           │  1374202 │            18.24 │
+│ Queens        │ Ozone Park                                    │   532018 │            15.83 │
+│ Bronx         │ Bedford Park                                  │  1827051 │            15.41 │
+│ Manhattan     │ Hamilton Heights                              │  1811861 │            16.88 │
+│ Queens        │ Glendale                                      │   816142 │            16.25 │
+│ Brooklyn      │ Red Hook                                      │   636041 │            20.71 │
+│ Brooklyn      │ Brighton Beach                                │   726203 │            16.18 │
+│ Bronx         │ Van Cortlandt Park                            │   214910 │            15.26 │
+│ Manhattan     │ Inwood Hill Park                              │    89276 │            17.11 │
+│ Manhattan     │ Lenox Hill East                               │  3314225 │            18.11 │
+│ Queens        │ Long Island City/Queens Plaza                 │   871604 │            18.92 │
+│ Bronx         │ Allerton/Pelham Gardens                       │   785701 │            15.09 │
+│ Manhattan     │ Kips Bay                                      │  2849735 │            16.53 │
+│ Manhattan     │ TriBeCa/Civic Center                          │  3992268 │            18.47 │
+│ Bronx         │ Schuylerville/Edgewater Park                  │  1079156 │            16.07 │
+│ Staten Island │ Bloomfield/Emerson Hill                       │   459261 │            16.68 │
+│ Queens        │ Richmond Hill                                 │  1401785 │            15.85 │
+│ Bronx         │ Eastchester                                   │  1021426 │            15.15 │
+│ Bronx         │ West Farms/Bronx River                        │  1007574 │            14.74 │
+│ Brooklyn      │ Sunset Park West                              │  1593851 │            19.07 │
+│ Queens        │ Laurelton                                     │   613905 │            15.78 │
+│ Queens        │ Steinway                                      │  1630944 │            16.45 │
+│ Manhattan     │ Upper West Side North                         │  3169509 │            16.55 │
+│ Queens        │ Long Island City/Hunters Point                │  2199136 │            18.58 │
+│ Manhattan     │ Yorkville West                                │  3095801 │            16.03 │
+│ Brooklyn      │ Manhattan Beach                               │   373567 │             15.9 │
+│ Queens        │ Old Astoria                                   │  1202144 │            17.34 │
+│ Bronx         │ Norwood                                       │  1554531 │            15.88 │
+│ Bronx         │ West Concourse                                │  1897142 │            14.94 │
+│ Brooklyn      │ Cobble Hill                                   │   473468 │            18.87 │
+│ Brooklyn      │ Sunset Park East                              │   787654 │            18.56 │
+│ Queens        │ Woodside                                      │  1400216 │            15.78 │
+│ Queens        │ East Elmhurst                                 │   799099 │            18.47 │
+│ Manhattan     │ Manhattan Valley                              │  1723329 │            16.87 │
+│ Brooklyn      │ Carroll Gardens                               │   763646 │            18.49 │
+│ Brooklyn      │ South Williamsburg                            │   538475 │            15.48 │
+│ Brooklyn      │ Columbia Street                               │   173467 │            18.09 │
+│ Bronx         │ Van Cortlandt Village                         │  1460361 │            15.54 │
+│ Manhattan     │ Financial District North                      │  2156752 │            20.34 │
+│ Queens        │ Cambria Heights                               │   373621 │            17.19 │
+│ Manhattan     │ Morningside Heights                           │  1782033 │             17.7 │
+│ Manhattan     │ Lincoln Square West                           │  2346352 │            16.59 │
+│ Manhattan     │ Lenox Hill West                               │  3687391 │            15.99 │
+│ Bronx         │ Melrose South                                 │  1737467 │            16.66 │
+│ Manhattan     │ Two Bridges/Seward Park                       │  1692168 │            18.17 │
+│ Queens        │ Briarwood/Jamaica Hills                       │   749814 │            16.82 │
+│ Queens        │ Rockaway Park                                 │   203447 │            22.32 │
+│ Manhattan     │ Midtown East                                  │  4016379 │            17.51 │
+│ Bronx         │ East Tremont                                  │  1684671 │            15.37 │
+│ Manhattan     │ World Trade Center                            │  1237472 │            21.51 │
+│ Queens        │ Kew Gardens Hills                             │   556535 │            18.06 │
+│ Queens        │ Douglaston                                    │   177505 │            17.69 │
+│ Queens        │ Flushing Meadows-Corona Park                  │   171412 │            22.49 │
+│ Manhattan     │ Midtown South                                 │  3736269 │            17.82 │
+│ Brooklyn      │ Cypress Hills                                 │  1205024 │            17.04 │
+│ Manhattan     │ Little Italy/NoLiTa                           │  2503415 │            17.96 │
+│ Brooklyn      │ Windsor Terrace                               │   463462 │            19.02 │
+│ Manhattan     │ East Chelsea                                  │  4195517 │            18.36 │
+│ Manhattan     │ Randalls Island                               │    46132 │            22.11 │
+│ Brooklyn      │ Bensonhurst East                              │   881642 │            16.49 │
+│ Brooklyn      │ Ocean Parkway South                           │   361286 │            15.67 │
+│ Bronx         │ Co-Op City                                    │  1332947 │            16.84 │
+│ Brooklyn      │ East Flatbush/Farragut                        │  1724361 │            17.27 │
+│ Queens        │ Bayside                                       │   597536 │            16.31 │
+│ Queens        │ Sunnyside                                     │  2037312 │            17.74 │
+│ Brooklyn      │ Prospect Heights                              │  1111779 │            18.85 │
+│ Queens        │ Jamaica                                       │  2203800 │            16.29 │
+│ Queens        │ Hillcrest/Pomonok                             │   729770 │            18.17 │
+│ Manhattan     │ Central Park                                  │  1472981 │            16.46 │
+│ Queens        │ Jamaica Estates                               │   505358 │            16.95 │
+│ Brooklyn      │ Canarsie                                      │  2929879 │            16.37 │
+│ Bronx         │ University Heights/Morris Heights             │  1809761 │            15.32 │
+│ Brooklyn      │ Stuyvesant Heights                            │  3102701 │            18.91 │
+│ Queens        │ Corona                                        │  1198654 │            16.15 │
+│ Brooklyn      │ Dyker Heights                                 │   536628 │            16.86 │
+│ Queens        │ Auburndale                                    │   270216 │            16.98 │
+│ Manhattan     │ Lower East Side                               │  3295298 │            17.54 │
+│ Manhattan     │ Seaport                                       │   727688 │            19.59 │
+│ Manhattan     │ Bloomingdale                                  │   728573 │            17.37 │
+│ Manhattan     │ Roosevelt Island                              │   195736 │             23.9 │
+│ Queens        │ Springfield Gardens South                     │   667668 │            16.59 │
+│ Unknown       │ NV                                            │  8907760 │            30.09 │
+│ Bronx         │ Claremont/Bathgate                            │  1367108 │            15.22 │
+│ Unknown       │ NA                                            │   324655 │            35.64 │
+│ Manhattan     │ Flatiron                                      │  3075275 │            16.54 │
+│ Manhattan     │ Clinton East                                  │  4556417 │            17.65 │
+│ Manhattan     │ Inwood                                        │  1292552 │            16.28 │
+│ Manhattan     │ Union Sq                                      │  4601580 │            17.09 │
+│ Queens        │ Queensbridge/Ravenswood                       │   549976 │            18.43 │
+│ Manhattan     │ Times Sq/Theatre District                     │  4081441 │            19.59 │
+│ Manhattan     │ East Village                                  │  5659600 │            16.71 │
+│ Manhattan     │ Financial District South                      │   776946 │            21.43 │
+│ Brooklyn      │ DUMBO/Vinegar Hill                            │  1075204 │            18.85 │
+│ Bronx         │ Crotona Park East                             │   960023 │            15.26 │
+│ Manhattan     │ Penn Station/Madison Sq West                  │  3835659 │            18.28 │
+│ Bronx         │ Riverdale/North Riverdale/Fieldston           │   537623 │            17.92 │
+│ Manhattan     │ Manhattanville                                │   924240 │            16.62 │
+│ Bronx         │ Morrisania/Melrose                            │  1537856 │            16.25 │
+│ Queens        │ College Point                                 │   455297 │            24.66 │
+│ Manhattan     │ West Chelsea/Hudson Yards                     │  3451329 │            18.05 │
+│ Brooklyn      │ Prospect Park                                 │   207261 │            19.66 │
+│ Bronx         │ Country Club                                  │   103467 │             16.1 │
+│ Brooklyn      │ Brooklyn Navy Yard                            │   264000 │            18.57 │
+│ Queens        │ Bay Terrace/Fort Totten                       │   225681 │            18.32 │
+│ Bronx         │ Pelham Bay                                    │   447595 │            15.37 │
+│ Bronx         │ City Island                                   │    76991 │            23.14 │
+│ Queens        │ Oakland Gardens                               │   208294 │            17.49 │
+│ Manhattan     │ Greenwich Village South                       │  2382099 │            16.98 │
+│ Manhattan     │ Upper West Side South                         │  3632365 │            16.26 │
+│ Bronx         │ Bronx Park                                    │   156587 │            19.83 │
+│ Queens        │ Breezy Point/Fort Tilden/Riis Beach           │    31520 │             30.2 │
+│ Manhattan     │ Clinton West                                  │  2288694 │            17.79 │
+│ Manhattan     │ Sutton Place/Turtle Bay North                 │  3079791 │            16.03 │
+│ Manhattan     │ West Village                                  │  3907851 │            16.54 │
+│ Manhattan     │ Hudson Sq                                     │  1200168 │            17.56 │
+│ Brooklyn      │ Bay Ridge                                     │  1762268 │            19.84 │
+│ Queens        │ Middle Village                                │   678888 │            16.67 │
+│ Queens        │ Ridgewood                                     │  2018160 │            17.74 │
+│ Queens        │ Murray Hill-Queens                            │   639783 │            31.08 │
+│ Bronx         │ Crotona Park                                  │    58091 │            15.76 │
+│ Manhattan     │ Garment District                              │  2523852 │            19.19 │
+│ Manhattan     │ Yorkville East                                │  2097899 │            15.75 │
+│ Manhattan     │ Meatpacking/West Village West                 │  2085219 │            17.85 │
+│ Queens        │ Broad Channel                                 │    15717 │            18.46 │
+│ Brooklyn      │ Marine Park/Floyd Bennett Field               │    35007 │            21.61 │
+│ Queens        │ Willets Point                                 │    22328 │            22.29 │
+│ Manhattan     │ SoHo                                          │  2125885 │            17.85 │
+│ Queens        │ Forest Park/Highland Park                     │    50841 │            17.81 │
+│ Manhattan     │ Battery Park City                             │  1641907 │            19.52 │
+│ Staten Island │ Saint George/New Brighton                     │   783641 │            16.05 │
+│ Staten Island │ Grymes Hill/Clifton                           │   339842 │            23.88 │
+│ Staten Island │ Mariners Harbor                               │   450029 │            15.47 │
+│ Bronx         │ Pelham Bay Park                               │    77580 │            16.33 │
+│ Staten Island │ Heartland Village/Todt Hill                   │   325140 │            17.75 │
+│ Manhattan     │ Highbridge Park                               │    36593 │            16.08 │
+│ Queens        │ Saint Michaels Cemetery/Woodside              │   110990 │            12.52 │
+│ Brooklyn      │ Green-Wood Cemetery                           │    15292 │            17.73 │
+│ Queens        │ LaGuardia Airport                             │  4380677 │            30.16 │
+│ Queens        │ JFK Airport                                   │  5099890 │            37.41 │
+│ Staten Island │ West Brighton                                 │   257146 │            16.22 │
+│ EWR           │ Newark Airport                                │    19301 │            33.69 │
+│ Staten Island │ Port Richmond                                 │   224142 │             16.4 │
+│ Staten Island │ Stapleton                                     │   617640 │             23.0 │
+│ Staten Island │ South Beach/Dongan Hills                      │   267703 │             19.1 │
+│ Queens        │ Astoria Park                                  │    13699 │             17.6 │
+│ Staten Island │ Arden Heights                                 │    87820 │            17.12 │
+│ Staten Island │ Westerleigh                                   │   238872 │            15.36 │
+│ Staten Island │ Freshkills Park                               │     7934 │            15.64 │
+│ Staten Island │ Great Kills                                   │   194727 │            17.45 │
+│ Staten Island │ Charleston/Tottenville                        │   130510 │            17.92 │
+│ Staten Island │ Eltingville/Annadale/Prince's Bay             │   128979 │            17.53 │
+│ Queens        │ Jamaica Bay                                   │     1012 │            27.42 │
+│ Staten Island │ New Dorp/Midland Beach                        │   180067 │            18.02 │
+│ Bronx         │ Fordham South                                 │   870116 │            15.72 │
+│ Manhattan     │ Midtown North                                 │  3456358 │            18.17 │
+│ Queens        │ Maspeth                                       │   857789 │            15.85 │
+│ Manhattan     │ Alphabet City                                 │  1224381 │            17.86 │
+│ Manhattan     │ Greenwich Village North                       │  2618345 │            17.16 │
+│ Staten Island │ Rossville/Woodrow                             │    75021 │            16.75 │
+│ Staten Island │ Arrochar/Fort Wadsworth                       │   180094 │            18.06 │
+│ Staten Island │ Oakwood                                       │   107817 │            18.92 │
+│ Manhattan     │ Governor's Island/Ellis Island/Liberty Island │       90 │            21.46 │
+│ Bronx         │ Rikers Island                                 │       84 │            37.89 │
+│ Staten Island │ Great Kills Park                              │      600 │            20.53 │
+├───────────────┴───────────────────────────────────────────────┴──────────┴──────────────────┤
+│ 262 rows                                                                          4 columns │
+└─────────────────────────────────────────────────────────────────────────────────────────────┘

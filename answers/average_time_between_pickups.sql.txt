@@ -1,0 +1,50 @@
+┌───────────────────────────────────────────────┬──────────────────────────┐
+│                     Zone                      │ avg_time_between_pickups │
+│                    varchar                    │          double          │
+├───────────────────────────────────────────────┼──────────────────────────┤
+│ Queensbridge/Ravenswood                       │        3336.392980784616 │
+│ TriBeCa/Civic Center                          │        97.24063890500337 │
+│ Times Sq/Theatre District                     │        68.93306873724255 │
+│ Upper West Side South                         │        58.74404004002902 │
+│ Hudson Sq                                     │       45.422760813486114 │
+│ Midtown East                                  │        37.49717145717573 │
+│ Flatbush/Ditmas Park                          │        3.847248862168079 │
+│ JFK Airport                                   │        2.739915566806343 │
+│ NV                                            │        1.142989483326897 │
+│ Penn Station/Madison Sq West                  │       0.7522806380859195 │
+│ Rikers Island                                 │       0.5238095238095238 │
+│ NA                                            │       0.5226809998305894 │
+│ Sutton Place/Turtle Bay North                 │      0.45024808501615854 │
+│ Lenox Hill East                               │        0.445426608030535 │
+│ Greenwich Village North                       │      0.34990079611357555 │
+│ Murray Hill                                   │      0.34968029927084876 │
+│ Clinton West                                  │       0.3428099169220525 │
+│ Meatpacking/West Village West                 │       0.3411915007488422 │
+│ Central Park                                  │      0.31567616961793804 │
+│ Governor's Island/Ellis Island/Liberty Island │       0.3111111111111111 │
+│        ·                                      │                ·         │
+│        ·                                      │                ·         │
+│        ·                                      │                ·         │
+│ Windsor Terrace                               │      0.07503959332156682 │
+│ Clinton Hill                                  │      0.07465433842729335 │
+│ Ocean Parkway South                           │      0.07465276816704772 │
+│ Fresh Meadows                                 │      0.07419892326325443 │
+│ Gowanus                                       │      0.07395294301571172 │
+│ Borough Park                                  │      0.07354663700275035 │
+│ Green-Wood Cemetery                           │      0.07330630394977766 │
+│ Cobble Hill                                   │      0.07262370424189174 │
+│ Prospect Park                                 │      0.07135930059200718 │
+│ Prospect Heights                              │      0.07071459345787247 │
+│ Park Slope                                    │      0.06931881620065279 │
+│ Riverdale/North Riverdale/Fieldston           │       0.0692120686800974 │
+│ Williamsburg (North Side)                     │      0.06784718122643608 │
+│ Brooklyn Navy Yard                            │      0.06684848484848485 │
+│ Greenpoint                                    │      0.06675596843843863 │
+│ Brooklyn Heights                              │      0.06590178265419733 │
+│ Columbia Street                               │       0.0649518352193789 │
+│ Heartland Village/Todt Hill                   │       0.0644337823706711 │
+│ DUMBO/Vinegar Hill                            │      0.06294805450872579 │
+│ Carroll Gardens                               │      0.06069173412811695 │
+├───────────────────────────────────────────────┴──────────────────────────┤
+│ 262 rows (40 shown)                                            2 columns │
+└──────────────────────────────────────────────────────────────────────────┘

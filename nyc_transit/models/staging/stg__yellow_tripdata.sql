@@ -13,7 +13,7 @@ renamed as (
         passenger_count,
         trip_distance,
         ratecodeid,
-        CASE WHEN store_and_fwd_flag = 'Y' THEN TRUE ELSE FALSE END AS store_and_fwd_flag,
+        {{flag_to_bool("store_and_fwd_flag")}} as store_and_fwd_flag,
         pulocationid,
         dolocationid,
         payment_type,
